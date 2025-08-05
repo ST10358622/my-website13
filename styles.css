@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-image: url('neural-background.jpg'); /* Ensure the image name matches */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #f0f8ff;
+  min-height: 100vh;
+  position: relative;
+  line-height: 1.6;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(10, 15, 44, 0.85); /* deeper overlay for better contrast */
+  z-index: -1;
+}
+
+header,
+nav,
+section,
+footer {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 191, 255, 0.3);
+  max-width: 1000px;
+  backdrop-filter: blur(8px);
+}
+
+header h1 {
+  color: #6EF6FF;
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 15px;
+}
+
+nav a {
+  color: #EAF6FF;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 30px;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+nav a:hover {
+  background-color: #00BFFF;
+  color: #000;
+  border-color: #6EF6FF;
+}
+
+h2 {
+  color: #42F5E9;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2rem;
+}
+
+.skill-box,
+.project-box {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 12px;
+  border-left: 4px solid #00BFFF;
+  box-shadow: 0 4px 15px rgba(0, 191, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.skill-box:hover,
+.project-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 191, 255, 0.35);
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #6EF6FF;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
